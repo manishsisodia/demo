@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorld {
 
     @GetMapping("/hello")
-    public ResponseEntity<?> helloWorld(){
-        return new ResponseEntity<>("Hello World Using Jenkins", HttpStatus.OK);
+    public String helloWorld(){
+        return "Hello World Using Jenkins";
     }
 }
